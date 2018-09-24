@@ -25,9 +25,9 @@ app.get('/Students', function (req, res) {
         if (err) throw err
         
         res.render('pages/Students',{students:rows})
-        console.log('The solution is: ', rows[0].solution)
+        console.log('The solution is: ', rows.solution)
       })
-      //connection.end()
+     
 });
 app.get('/Subjects', function (req, res) {
     
@@ -35,11 +35,11 @@ app.get('/Subjects', function (req, res) {
         if (err) throw err
         
         res.render('pages/Subjects',{subjects:rows})
-        console.log('The solution is: ', rows[0].solution)
+        console.log('The solution is: ', rows.solution)
       })
-      //connection.end()
+      
 });
 
 
-console.log('App is running at http://localhost:8080');
+console.log('App is running at http://localhost:8081');
 app.listen(8081);
