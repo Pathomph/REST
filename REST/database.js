@@ -1,5 +1,5 @@
 const pgp = require('pg-promise')();
-var db = pgp('postgres://vvmfldigobfsah:7a25939afdce95a7fab11c6b063b169b7348393f6051b7d2e2f3021ba7c1b73b@ec2-75-101-138-26.compute-1.amazonaws.com:5432/d4a00r3pp927i8?ssl=true');
+var db = pgp('postgres://kqqcnptqhrmtbv:9e7d3eabdd8e734187eea589eb8a4e3dcef9db3518f3807adf1b90caf41329b6@ec2-54-243-147-162.compute-1.amazonaws.com:5432/d5alnr4rinaee0?ssl=true');
 
 module.exports = {
     getAllProducts,
@@ -23,7 +23,7 @@ module.exports = {
     getPurchase_itemsByID,
     InsertPurchase_items
 
-    
+
 }
 
 function getAllProducts(req, res) {
